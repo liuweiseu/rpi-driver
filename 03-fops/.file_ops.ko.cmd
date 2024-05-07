@@ -1,0 +1,1 @@
+savedcmd_/home/wei/Projects/rpi-driver/03-fops/file_ops.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/wei/Projects/rpi-driver/03-fops/file_ops.ko /home/wei/Projects/rpi-driver/03-fops/file_ops.o /home/wei/Projects/rpi-driver/03-fops/file_ops.mod.o;  true

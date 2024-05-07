@@ -1,0 +1,1 @@
+savedcmd_/home/wei/Projects/rpi-driver/03-fops/file_ops.mod := printf '%s\n'   file_ops.o | awk '!x[$$0]++ { print("/home/wei/Projects/rpi-driver/03-fops/"$$0) }' > /home/wei/Projects/rpi-driver/03-fops/file_ops.mod

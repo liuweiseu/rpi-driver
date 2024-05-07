@@ -1,0 +1,1 @@
+savedcmd_/home/wei/Projects/rpi-driver/03-fops/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/wei/Projects/rpi-driver/03-fops/Module.symvers -T /home/wei/Projects/rpi-driver/03-fops/modules.order -i Module.symvers -e 
