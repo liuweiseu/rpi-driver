@@ -1,6 +1,6 @@
-obj-m +=mygpio.o
+obj-m +=parameter.o
 
-KDIR:=../linux
+KDIR:=/home/wei/Projects/rpi-driver/linux
 
 PWD?=${shell pwd}
 
