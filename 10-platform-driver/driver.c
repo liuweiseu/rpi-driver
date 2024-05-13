@@ -2,6 +2,7 @@
 #include <linux/module.h>
 #include <linux/platform_device.h>
 #include <linux/device.h>
+#include <linux/mod_devicetable.h>
 
 int gpio_probe(struct platform_device *pdev)
 {
@@ -15,13 +16,18 @@ int gpio_remove(struct platform_device *pdev)
   return 0;
 }
 
+struct platform_device_id pf_id_table = {
+  .name = "gpio_test"
+};
+
 struct platform_driver pf_driver = {
 	.probe = gpio_probe,
 	.remove = gpio_remove,
   .driver = {
-    .name = "gpio_test",
+    .name = "gpio_test_inv",
     .owner = THIS_MODULE
-  }
+  },
+  .id_table = &pf_id_table
 };
 
 static __init int gpio_driver_init(void)
