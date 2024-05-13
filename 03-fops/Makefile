@@ -1,6 +1,6 @@
 obj-m +=file_ops.o
 
-KDIR:=/home/wei/Projects/rpi-driver/linux
+KDIR:=../linux
 
 PWD?=${shell pwd}
 

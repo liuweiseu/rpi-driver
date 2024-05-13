@@ -1,4 +1,4 @@
-obj-m +=helloworld.o
+obj-m +=chrdevreg.o
 
 KDIR:=../linux
 
